@@ -88,8 +88,8 @@ function displayGameProfile(game) {
   });
 
   // Initial console message on start up
-  console.warn("VISITOR NOTE: YOUR SEARCH NEEDS TO BE EXACT!!! READ THE report.html FOR MORE DETAILS!");
-  console.warn("Here are some search options you can try: ");
+  console.log("VISITOR NOTE: YOUR SEARCH NEEDS TO BE EXACT!!! READ THE report.html FOR MORE DETAILS!");
+  console.log("Here are some search options you can try: ");
   const allVideoGameTestTitles = `resident-evil-4-2023
   the-legend-of-zelda-breath-of-the-wild-sequel
   super-mario-64-1996
@@ -112,4 +112,4 @@ function displayGameProfile(game) {
   grand-theft-auto-v
   the-last-of-us
   the-witcher-3-wild-hunt`
-  console.warn(allVideoGameTestTitles);
+  console.log(allVideoGameTestTitles);
