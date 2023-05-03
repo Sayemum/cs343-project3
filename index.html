@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Sayemum Hassan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
   <title>Video Game Profile and News</title>
@@ -20,6 +21,14 @@
     <div id="gameProfile"></div>
     <div id="gameImages"></div>
     <div id="gameNews"></div>
+
+    <label for="sort-options">Sort by:</label>
+    <select id="sort-options">
+    <option value="alphabetical">Alphabetical</option>
+    <option value="date">Date Published</option>
+    <option value="provider">Provider</option>
+    </select>
+    <div id="articles-container"></div>
   </main>
 
   <script src="scripts/rawg-api.js"></script>

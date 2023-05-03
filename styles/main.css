@@ -1,0 +1,40 @@
+/* Base styles for the whole site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .game-profile,
+  .news-article {
+    margin-bottom: 2rem;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* Mobile scaling */
+.game-profile img,
+.news-article img {
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop scaling */
+@media (min-width: 1024px) {
+  .game-profile img,
+  .news-article img {
+    width: 30%;
+    height: auto;
+  }
+}

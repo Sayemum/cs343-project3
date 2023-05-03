@@ -1,20 +1,20 @@
-const apiKey = "c5ffe1f1b9cf4c75b41365e7f3ad5278"; // Replace with your actual API key
+async function searchVideoGame(query) {
+    const url = `https://rawg-video-games-database.p.rapidapi.com/games/${query}?key=0feab229ce0740da806c681148c00d60`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '5edb6047f7msh3b456d5178c2fefp1e7d64jsn00f08b160820',
+            'X-RapidAPI-Host': 'rawg-video-games-database.p.rapidapi.com'
+        }
+    };
 
-async function searchVideoGames(query) {
-  const url = new URL("https://rawg-video-games-database.p.rapidapi.com/games");
-  url.searchParams.append("search", query);
-  
-  const response = await fetch(url, {
-    headers: {
-      "X-RapidAPI-Host": "rawg-video-games-database.p.rapidapi.com",
-      "X-RapidAPI-Key": apiKey
+    try {
+        const response = await fetch(url, options);
+        const gameInfoTable = await response.json();
+        console.log(gameInfoTable);
+        console.log(gameInfoTable.name);
+        displayGameProfile(gameInfoTable);
+    } catch (error) {
+        console.error(error);
     }
-  });
-
-  if (!response.ok) {
-    throw new Error("Error fetching video game data");
-  }
-
-  const data = await response.json();
-  return data.results;
 }
