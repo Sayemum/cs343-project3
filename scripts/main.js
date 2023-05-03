@@ -86,3 +86,30 @@ function displayGameProfile(game) {
   document.getElementById('sort-options').addEventListener('change', function () {
     sortArticles(this.value);
   });
+
+  // Initial console message on start up
+  console.warn("VISITOR NOTE: YOUR SEARCH NEEDS TO BE EXACT!!! READ THE report.html FOR MORE DETAILS!");
+  console.warn("Here are some search options you can try: ");
+  const allVideoGameTestTitles = `resident-evil-4-2023
+  the-legend-of-zelda-breath-of-the-wild-sequel
+  super-mario-64-1996
+  minecraft
+  super-mario-galaxy
+  batman-arkham-city-2
+  persona-5
+  the-legend-of-zelda-a-link-to-the-past
+  shin-megami-tensei-persona-4
+  stardew-valley
+  metroid-dread
+  super-smash-bros-ultimate
+  phoenix-wright-ace-attorney-2001
+  splatoon-3
+  yakuza-0
+  god-of-war-iii
+  the-legend-of-zelda-ocarina-of-time
+  elden-ring
+  metal-gear-solid-3-snake-eater
+  grand-theft-auto-v
+  the-last-of-us
+  the-witcher-3-wild-hunt`
+  console.warn(allVideoGameTestTitles);
